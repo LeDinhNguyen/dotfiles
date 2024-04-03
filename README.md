@@ -8,11 +8,11 @@ Ensure you have the following installed on your system
 
 ### Git
 ```
-pacman -S git
+brew install git
 ```
 ### Stow
 ```
-pacman -S stow
+brew install stow
 ```
 
 ## Installation
