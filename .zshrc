@@ -72,11 +72,11 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete)
 
-# if which tmux 2>&1 >/dev/null; then
-#    if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
-#     tmux attach -t main || tmux new -s main; exit
-#   fi
-# fi
+if which tmux 2>&1 >/dev/null; then
+   if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
+    tmux attach -t main || tmux new -s main; exit
+  fi
+fi
 
 export EDITOR='vim'
 
